@@ -1,0 +1,145 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-pic:hover {
+	box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+.quote {
+	font-style: italic;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align: center;
+	text-decoration: none;
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.projects-heading {
+	text-align: center;
+}
+
+.projects-grid {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 50% 50%;
+}
+
+.proj-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.proj-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	align-self: center;
+	color: rgb(200, 200, 200);
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+.proj-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.proj-wrapper::after > h4 {
+	opacity: 0;
+	transition: opacity ease-in-out .2s;
+}
+
+.proj-wrapper:hover::after > h4 {
+	opacity: 1;
+}
+
+.project-image {
+	width: 300px;
+	height: 300px;
+	border-radius: 8%;
+	justify-self: center;
+	transition: all ease-in-out .2s;
+	padding: 5%;
+}
+
+.project-image::after {
+	opacity: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	border-radius: 8%;
+	transition: opacity ease-in-out .2s;
+}
+
+.project-image:hover {
+	filter: brightness(.75);
+	transform: scale(1.1, 1.1);
+}
+
+.project-image:hover::after {
+	opacity: 1;
+}
+
+@media (max-width: 650px) {
+	.projects-grid {
+		grid-template-columns: 100%
+	}
+}
+
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+@media (max-width: 650px) {
+    .links-and-contact {
+        grid-template-columns: 100%;
+    }
+}
