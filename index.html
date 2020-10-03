@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="styles.css">
-
 	<title>Serena's Portfolio</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="project1.css">
+
+	
+	<!-- Fonts & Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -14,80 +20,75 @@
 	<div class="intro">
 		<img class="profile-pic" src="images/IMG_3872.jpeg">
 		<h1>Serena Tse</h1>
-		<h3>...</h3>
 	</div>
 
 	<hr>
 
-	<div class="about-grid">
-		<div class="i-am">
-			<h3>I am</h3>
-			<ul class="about-list">
-				<li>An engineer</li>
-				<li>A reader</li>
-				<li>A hobby cook</li>
-			</ul>
-		</div>
-	
-		<div class="i-like">
-			<h3>I like to</h3>
-			<ul class="about-list">
-				<li>Meet new people</li>
-				<li>Play guitar</li>
-				<li>Eat Icecream</li>
-			</ul>
-		</div>
+	<div class="contact-info">
+		<h4>Milpitas, CA <br> (408)239-6761 <br>serenatse98@gmail.com </h4>
 	</div>
 
 	<hr>
+
 
 	<div>
 		<h3 class="projects-heading">Projects</h3>
 		<div class="projects-grid">
 			<div class="proj-wrapper">
-				<h4>Project 1</h4>
-				<img id="pic1" class="project-image" src="images/b1.jpeg"/>
+				<h4 onclick="project1()">Project 1</h4>
+				<button onclick="project1()" class="proj-button" id="proj1-button"><img id="pic1" class="project-image" src="images/b1.jpeg"/></button>
 			</div>
 			
 			<div class="proj-wrapper">
-				<h4>Project 2</h4>
-				<img class="project-image" src="images/b2.jpg"/>
+				<h4 onclick="project2()">Project 2</h4>
+				<button onclick="project2()" class="proj-button" id="proj2-button"><img class="project-image" src="images/b2.jpg"/></button>
 			</div>
 
 			<div class="proj-wrapper">
-				<h4>Project 3</h4>
-				<img class="project-image" src="images/b3.jpg"/>
+				<h4 onclick="project3()">Project 3</h4>
+				<button onclick="project3()" class="proj-button" id="proj3-button"><img class="project-image" src="images/b3.jpg"/></button>
 			</div>
 
 			<div class="proj-wrapper">
-				<h4>Project 4</h4>
-				<img class="project-image" src="images/b4.jpeg"/>
+				<h4 onclick="project4()">Project 4</h4>
+				<button onclick="project4()" class="proj-button" id="proj4-button"><img class="project-image" src="images/b4.jpeg"/></button>
 			</div>
 
 		</div>
 	</div>
 </div>
+
+<div id="project1Modal" class="projectModal">
+	<div class="project1Modal-content">
+		<span class="modalDetail-close" onclick="closeProj1()">&times;</span>
+		<h2 id="proj1-header">===Project 1 Title===</h2>
+
+	</div>
+</div>
+
 </body>
 
 <hr>
 
-<footer>
+<!-- <footer>
 	<div class="links-and-contact">
 		<h3>Contact Me!</h3>
 		<br>
 		<form action="#">
 			<label for="email">
-				Email: <input type="email" placeholder="Enter your email">
+				Email: <input type="email" id="email" placeholder="Enter your email">
 			</label>
 			<br>
 			<label for="message">
-				Message: <br> <textarea id="message">Your Message</textarea>
+				Message: <br> <textarea id="message" placeholder="Your Message"></textarea>
 			</label>
 
 			<br>
-			<input type="submit" valid="Send Message">
+			<input type="submit" value="Send Message" id="submit-button">
 		</form>
 	</div>
-</footer>
+</footer> -->
+
+<script src="script.js"></script>
 
 </html>
