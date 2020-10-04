@@ -51,7 +51,6 @@ hr {
 .projects-heading {
 	/*font-family: 'Bebas Neue';*/
 	font-size: 30px;
-
 	text-align: center;
 }
 
@@ -59,6 +58,11 @@ hr {
 	display: grid;
 	justify-content: center;
 	grid-template-columns: 50% 50%;
+}
+
+.proj-head-date {
+	font-size: 15px;
+	color: rgb(160, 160, 160);
 }
 
 .proj-wrapper {

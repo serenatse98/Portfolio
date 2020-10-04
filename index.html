@@ -12,7 +12,7 @@
 	
 	<title>Serena's Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 </head>
 
 <body>
@@ -32,25 +32,29 @@
 
 
 	<div>
+		<br>
 		<h3 class="projects-heading">Projects</h3>
 		<div class="projects-grid">
 			<div class="proj-wrapper">
-				<h4 onclick="project1()">Project 1</h4>
+				<h4 class="proj-title" onclick="project1()">
+					FabFlix
+					<div class="proj-head-date">April - June 2019</div>
+				</h4>
 				<button onclick="project1()" class="proj-button" id="proj1-button"><img id="pic1" class="project-image" src="images/b1.jpeg"/></button>
 			</div>
 			
 			<div class="proj-wrapper">
-				<h4 onclick="project2()">Project 2</h4>
+				<h4 class="proj-title" onclick="project2()">Project 2</h4>
 				<button onclick="project2()" class="proj-button" id="proj2-button"><img class="project-image" src="images/b2.jpg"/></button>
 			</div>
 
 			<div class="proj-wrapper">
-				<h4 onclick="project3()">Project 3</h4>
+				<h4 class="proj-title" onclick="project3()">Project 3</h4>
 				<button onclick="project3()" class="proj-button" id="proj3-button"><img class="project-image" src="images/b3.jpg"/></button>
 			</div>
 
 			<div class="proj-wrapper">
-				<h4 onclick="project4()">Project 4</h4>
+				<h4 class="proj-title" onclick="project4()">Project 4</h4>
 				<button onclick="project4()" class="proj-button" id="proj4-button"><img class="project-image" src="images/b4.jpeg"/></button>
 			</div>
 
@@ -61,7 +65,25 @@
 <div id="project1Modal" class="projectModal">
 	<div class="project1Modal-content">
 		<span class="modalDetail-close" onclick="closeProj1()">&times;</span>
-		<h2 id="proj1-header">===Project 1 Title===</h2>
+		<h2 id="proj1-header">=== FabFlix ===</h2>
+		<p id="p1-date">April - June 2019</p>
+
+		<p>
+			A mock e-commerce website that sells movies. Users are able to login/register an account, search, browse, and buy movies. <br>
+			The list of movies and their descriptions/information is pulled and stored into a databse from imbd.com. I used SQL in order to ________ FINISH DESC....
+		</p>
+
+		<p id="p1-desc">Front-end development: HTML, CSS <br>
+			Back-end development: Java, Javascript, SQL, RESTful APIs <br>
+		</p>
+
+		<br>
+		<div class="video">
+			<p align="center">
+			Demo of Website
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wyKxDMYtm-A?start=255" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+		</div>
+		<p>  </p>
 
 	</div>
 </div>

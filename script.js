@@ -3,6 +3,7 @@ let proj1 = document.querySelector("#proj1-button")
 function project1()
 {
 	console.log("project 1 showing");
+
 	let modal = document.getElementById("project1Modal");
 
 	modal.style.display = "block";
@@ -20,7 +21,6 @@ function closeProj1()
 	let modal = document.getElementById("project1Modal");
 	
 	modal.style.display = "none";
-	
 }
 
 
