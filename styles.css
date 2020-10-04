@@ -65,6 +65,7 @@ hr {
 	color: rgb(160, 160, 160);
 }
 
+
 .proj-wrapper {
 	justify-self: center;
 	padding: 4%;
@@ -84,19 +85,23 @@ hr {
 	font-size: 20px;
 }
 
-.proj-wrapper:hover > h4 {
-	visibility: visible;
-	cursor: default;
+@media (hover: hover) {
+	.proj-wrapper:hover > h4 {
+		visibility: visible;
+		cursor: default;
+	}
+
+
+	.proj-wrapper::after > h4 {
+		opacity: 0;
+		transition: opacity ease-in-out .2s;
+	}
+
+	.proj-wrapper:hover::after > h4 {
+		opacity: 1;
+	}
 }
 
-.proj-wrapper::after > h4 {
-	opacity: 0;
-	transition: opacity ease-in-out .2s;
-}
-
-.proj-wrapper:hover::after > h4 {
-	opacity: 1;
-}
 
 .project-image {
 	width: 300px;
