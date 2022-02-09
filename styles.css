@@ -91,7 +91,6 @@ hr {
 		cursor: default;
 	}
 
-
 	.proj-wrapper::after > h4 {
 		opacity: 0;
 		transition: opacity ease-in-out .2s;
